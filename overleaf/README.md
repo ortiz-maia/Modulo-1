@@ -1,1 +1,1 @@
-
+Curriculum hecho en LaTex
