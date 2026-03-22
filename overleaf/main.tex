@@ -1,0 +1,208 @@
+% a mashup of hipstercv, friggeri and twenty cv
+% https://www.latextemplates.com/template/twenty-seconds-resumecv
+% https://www.latextemplates.com/template/friggeri-resume-cv
+
+\documentclass[lighthipster]{simplehipstercv}
+% available options are: darkhipster, lighthipster, pastel, allblack, grey, verylight, withoutsidebar
+% withoutsidebar
+\usepackage[utf8]{inputenc}
+\usepackage[default]{raleway}
+\usepackage[margin=1cm, a4paper]{geometry}
+
+
+%------------------------------------------------------------------ Variablen
+
+\newlength{\rightcolwidth}
+\newlength{\leftcolwidth}
+\setlength{\leftcolwidth}{0.23\textwidth}
+\setlength{\rightcolwidth}{0.75\textwidth}
+
+%------------------------------------------------------------------
+\title{CV - Maia Ortiz}
+\author{Maia Ortiz}
+\date{Marzo 2026}
+
+\pagestyle{empty}
+\begin{document}
+
+
+\thispagestyle{empty}
+%-------------------------------------------------------------
+
+\section*{Start}
+
+\simpleheader{headercolour}{Maia}{Ortiz}{Estudiante de Ingeniería Industrial}{white}
+
+
+
+%------------------------------------------------
+
+% this has to be here so the paracols starts..
+\subsection*{}
+\vspace{4em}
+
+\setlength{\columnsep}{1.5cm}
+\columnratio{0.23}[0.75]
+\begin{paracol}{2}
+\hbadness5000
+%\backgroundcolor{c[1]}[rgb]{1,1,0.8} % cream yellow for column-1 %\backgroundcolor{g}[rgb]{0.8,1,1} % \backgroundcolor{l}[rgb]{0,0,0.7} % dark blue for left margin
+
+\paracolbackgroundoptions
+
+% 0.9,0.9,0.9 -- 0.8,0.8,0.8
+
+
+\footnotesize
+{\setasidefontcolour
+\flushright
+\begin{center}
+    \roundpic{Foto Mai.jpeg}
+\end{center}
+
+\bg{cvgreen}{white}{Sobre mí}\\[0.5em]
+
+{\footnotesize
+Estudiante de Ingeniería Industrial en la UNCuyo, con gran capacidad analítica y orientación al detalle. Me destaco por mi responsabilidad, puntualidad y habilidad para la planificación organizada de proyectos técnicos.}
+\bigskip
+
+\bg{cvgreen}{white}{Personal} \\[0.5em]
+Maia Ortiz
+
+20 años
+
+Mendoza, Argentina
+
+2612469048
+\bigskip
+
+\bg{cvgreen}{white}{Areas de especialización} \\[0.5em]
+
+ ~•~ Termodinámica \\
+ ~•~ Mecánica de Fluidos \\
+ ~•~ Electrotecnia \\
+ ~•~ Química Orgánica \\
+
+\bigskip
+
+
+
+\bigskip
+
+\bg{cvgreen}{white}{Intereses}\\[0.5em]
+
+~•~ Sistemas de Productividad Personal \\
+~•~ Optimización de Procesos \\ 
+~•~ Análisis de Datos Técnicos \\
+~•~ Bienestar y Disciplina \\
+\bigskip
+
+%\bg{cvgreen}{white}{Interests}\\[0.5em]
+
+%\texttt{R} ~/~ \texttt{Android} ~/~ \texttt{Linux}
+
+%\texttt{R} ~/~ \texttt{Android} ~/~ \texttt{Linux}
+
+%\texttt{R} ~/~ \texttt{Android} ~/~ \texttt{Linux}
+
+\vspace{4em}
+
+\infobubble{\faAt}{cvgreen}{white}{maialortiz@gmail.com}
+%\infobubble{\faTwitter}{cvgreen}{white}{-}
+%\infobubble{\faFacebook}{cvgreen}{white}{-}
+%\infobubble{\faGithub}{cvgreen}{white}{-}
+
+\phantom{turn the page}
+
+\phantom{turn the page}
+}
+%-----------------------------------------------------------
+\switchcolumn
+
+\small
+\section*{Formación académica}
+
+\begin{tabular}{r| p{0.42\textwidth} c}
+    \cvevent{2024-Presente}{Ingeniería Industriall}{Estudiante}{UNCuyo \color{cvred}}{Formación integral con énfasis en ciencias térmicas y de fluidos. Desarrollo de algoritmos en \textbf{MATLAB} y \textbf{Octave} para la resolución de sistemas complejos mediante métodos numéricos (Jacobi, Runge-Kutta). Aplicación de normativas de seguridad y precisión en laboratorios de Química Orgánica y Electrotecnia.}{UNCuyo.jpg} \hspace{1cm} \\
+    \cvevent{2019--2023}{Bachiller en Ciencias Sociales y Humanidades}{Colegio DAD}{Mendoza \color{cvred}}{Desarrollo de sólidas capacidades de análisis crítico, redacción técnica y comunicación efectiva. Reconocida por mi enfoque en la \textbf{planificación organizada} y el cumplimiento detallado de objetivos académicos en proyectos interdisciplinarios.}{dad.jpg} \hspace{1cm} \\
+\end{tabular}
+\vspace{3em}
+
+\begin{minipage}[t]{0.35\textwidth}
+\section*{Proyectos y experiencia}
+\begin{tabular}{r p{0.6\textwidth} c}
+    \cvdegree{2025}{Métodos Numéricos}{Algoritmos en Octave}{UNCuyo \color{headerblue}}{}{UNCuyo.jpg} \\
+    \cvdegree{2025}{Física II}{Óptica y Polarización}{UNCuyo \color{headerblue}}{}{UNCuyo.jpg} \\
+    \cvdegree{2024}{Química Orgánica}{Ensayos de Laboratorio}{UNCuyo \color{headerblue}}{}{UNCuyo.jpg}
+\end{tabular}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.3\textwidth}
+\section*{Habilidades Técnicas}
+\begin{tabular}{r @{\hspace{0.5em}}l}
+     \bg{skilllabelcolour}{iconcolour}{html} &  \barrule{0.4}{0.5em}{cvpurple}\\
+     \bg{skilllabelcolour}{iconcolour}{\LaTeX} & \barrule{0.55}{0.5em}{cvgreen} \\
+     \bg{skilllabelcolour}{iconcolour}{Octave} & \barrule{0.5}{0.5em}{cvpurple} \\
+     \bg{skilllabelcolour}{iconcolour}{python} & \barrule{0.25}{0.5em}{cvpurple} \\
+     \bg{skilllabelcolour}{iconcolour}{R} & \barrule{0.1}{0.5em}{cvpurple} \\
+\end{tabular}
+\end{minipage}
+{2025}{Física II}{Óptica y Polarización}{UNCuyo}
+\section*{Curriculum}
+\begin{tabular}{r| p{0.5\textwidth} c}
+    \cvevent{2025}{Métodos Numéricos}{Simulación Numérica}{UNCuyo \color{cvred}}{Implementación de algoritmos en Octave (Runge-Kutta y Jacobi) para la resolución de sistemas complejos}{UNCuyo.jpg} \\
+    \cvevent{2025}{Física II}{Óptica y Polarización}{UNCuyo \color{cvred}}{Uso de instrumental de precisión para ensayos de laboratorio y análisis de datos experimentales}{UNCuyo.jpg} \\
+\end{tabular}
+\vspace{3em}
+
+\begin{minipage}[t]{0.3\textwidth}
+\section*{Logros Académicos}
+\begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.55\textwidth}}
+    2026 & Presentación académica (UNCuyo) \\
+    2025 & Certificación interna de Seguridad en Laboratorio \\
+    2023 & Egresada con Honores - Bachiller en Cs. Sociales (DAD)
+\end{tabular}
+\bigskip
+
+\section*{Idiomas}
+\begin{tabular}{l | ll}
+\textbf{Español} & Nativo & \pictofraction{\faCircle}{cvgreen}{4}{black!30}{1}{\tiny} \\
+\textbf{Inglés} & Técnico & \pictofraction{\faCircle}{cvgreen}{3}{black!30}{1}{\tiny} \\
+\textbf{Francés} & Básico & \pictofraction{\faCircle}{cvgreen}{1}{black!30}{3}{\tiny} 
+\end{tabular}
+\bigskip
+
+\end{minipage}\hfill
+\begin{minipage}[t]{0.3\textwidth}
+\section*{Proyectos}
+\begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.7\textwidth}}
+    2025 & \emph{Simulación en Octave}: Implementación de los métodos Jacobi y Runge-Kutta para la resolución de sistemas de ecuaciones y modelos dinámicos. \\
+    2026 & Bitácora de Aprendizaje. \emph{Desarrollo de un perfil profesional detallado y registro de procesos técnicos en ingeniería.}
+\end{tabular}
+\bigskip
+
+\section*{Presentaciones}
+\begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.6\textwidth}}
+    Mar. 2026 & ``Estrategias de Trabajo en Equipo y Colaboración Académica'', en: \emph{Ingeniería Industrial} UNCuyo.
+\end{tabular}
+\end{minipage}
+
+
+
+
+
+
+\vfill{} % Whitespace before final footer
+
+%----------------------------------------------------------------------------------------
+%	FINAL FOOTER
+%----------------------------------------------------------------------------------------
+\setlength{\parindent}{0pt}
+\begin{minipage}[t]{\rightcolwidth}
+\begin{center}\fontfamily{\sfdefault}\selectfont \color{black!70}
+{\small Maia Ortiz \icon{\faEnvelopeO}{cvgreen}{} Mendoza \icon{\faMapMarker}{cvgreen}{} Argentina \icon{\faPhone}{cvgreen}{} 2612469048 \newline\icon{\faAt}{cvgreen}{} \protect\url{maialortiz@gmail.com}
+}
+\end{center}
+\end{minipage}
+
+\end{paracol}
+
+\end{document}
