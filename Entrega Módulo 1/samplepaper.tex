@@ -1,0 +1,134 @@
+% This is samplepaper.tex, a sample chapter demonstrating the
+% LLNCS macro package for Springer Computer Science proceedings;
+% Version 2.21 of 2022/01/12
+%
+\documentclass[runningheads]{llncs}
+%
+\usepackage{listings}
+\usepackage{xcolor}
+
+\lstset{
+    language=HTML,
+    basicstyle=\ttfamily\small,
+    keywordstyle=\color{blue}\bfseries,
+    stringstyle=\color{orange},
+    commentstyle=\color{gray}\itshape,
+    numbers=left,
+    numberstyle=\tiny\color{gray},
+    stepnumber=1,
+    numbersep=8pt,
+    backgroundcolor=\color{white},
+    showspaces=false,
+    showstringspaces=false,
+    frame=single,
+    rulecolor=\color{black!30},
+    tabsize=2,
+    breaklines=true,
+    breakatwhitespace=true,
+    captionpos=b % Leyenda debajo del código
+}
+
+\usepackage[T1]{fontenc}
+% T1 fonts will be used to generate the final print and online PDFs,
+% so please use T1 fonts in your manuscript whenever possible.
+% Other font encondings may result in incorrect characters.
+%
+\usepackage{graphicx}
+% Used for displaying a sample figure. If possible, figure files should
+% be included in EPS format.
+%
+% If you use the hyperref package, please uncomment the following two lines
+% to display URLs in blue roman font according to Springer's eBook style:
+%\usepackage{color}
+%\renewcommand\UrlFont{\color{blue}\rmfamily}
+%\urlstyle{rm}
+%
+\begin{document}
+%
+\title{Módulo 1 ZZZ}
+%
+%\titlerunning{Abbreviated paper title}
+% If the paper title is too long for the running head, you can set
+% an abbreviated paper title here
+%
+\author{Maia Ortiz\inst{1}\orcidID{ } \and
+Celina Lopez\inst{1}\orcidID{ } \and
+Rocio Gomez\inst{1}\orcidID{ } \and
+Bautista Pons\inst{1}\orcidID{ }}
+%
+\authorrunning{B. Pons}
+% First names are abbreviated in the running head.
+% If there are more than two authors, 'et al.' is used.
+%
+\institute{Universidad Nacional de Cuyo, Instituto de Ingeniería Industrial POBOX 5502 \and
+\email{baupons@gmail.com}\\
+\url{http://ingenieria.uncuyo.edu.ar/} %\and
+%ABC Institute, Rupert-Karls-University Heidelberg, Heidelberg, Germany\\
+%\email{\{abc,lncs\}@uni-heidelberg.de}}
+}
+%
+\maketitle              % typeset the header of the contribution
+%
+\begin{abstract}
+%The abstract should briefly summarize the contents of the paper in
+%150--250 words.
+El uso de Markdown permite crear páginas individuales en GitHub de manera sencilla, utilizando sintaxis ligera para dar formato a textos, listas, enlaces y títulos. Cada usuario puede desarrollar su propia página personal en GitHub Pages y, además, enlazarla con la página del grupo para mantener coherencia y centralizar la información. En proyectos colaborativos, Colab y GitHub se integran para compartir código, tablas y resultados, facilitando el trabajo en equipo. Las tablas en Markdown son útiles para organizar datos, \cite{lopez2003latex} mientras que la incrustación de imágenes aporta claridad visual y documentación más completa. Por otro lado, el estándar HTML del W3C asegura que las páginas web creadas cumplan con normas de accesibilidad y compatibilidad, lo que es esencial para proyectos académicos o profesionales. Finalmente, la construcción de una landing page combina estos elementos: estructura en HTML,  \cite{sepulcre2024uso} estilo con CSS, imágenes y tablas incrustadas, además de enlaces hacia páginas individuales o grupales en GitHub. Una landing page bien diseñada sirve como punto de entrada atractivo y funcional, mostrando de forma clara los objetivos del proyecto y facilitando la navegación hacia los recursos principales.
+
+\keywords{UNCuyo  \and TyHM \and markup language.}
+\end{abstract}
+%
+%
+%
+\section{Introducción}
+
+El presente documento constituye la entrega formal del Módulo 1, cuyo objetivo principal es la adquisición de competencias fundamentales en lenguajes de marcado y herramientas de computación en la nube. 
+
+A lo largo de este desarrollo, se explora inicialmente la estructura básica de HTML como pilar de la visualización web, para luego profundizar en la eficiencia de Markdown como estándar de documentación técnica. Asimismo, se aborda la potencia de LaTeX para la escritura académica de alta precisión y el uso estratégico de guías de referencia rápida (\textit{cheatsheets}) para la optimización de flujos de trabajo. Finalmente, se introduce el ecosistema de Google Colab como plataforma clave para la ejecución de código y el análisis de datos, integrando así un conjunto de herramientas esenciales para el desempeño profesional en ingeniería.
+
+\section{Uso Básico de html}
+
+\begin{lstlisting}[caption={Estructura básica de un documento HTML5.}, label={list:html_ejemplo}]
+<html>
+  <head>
+    <h1>Mi primer pagina de web</h1>
+  </head>
+  <body>
+    Esto es el cuerpo del texto
+    <p>Esto es un parrafo</p>
+    
+    <ul>
+      
+      <li>primero</li>
+      <li>segundo</li>
+    </ul>
+  </body>
+</html>
+\end{lstlisting}
+
+\section{Lenguajes: Markdown y LaTeX}
+
+En esta sección, observamos como las herramientas de marcado facilitan la creación de documentos profesionales. Markdown me ha permitido estructurar de forma rápida mis notas, mientras que LaTeX ha sido clave para darle un formato académico impecable a mis trabajos de ingeniería.
+
+\subsection{Markdown en Github}
+
+Markdown funciona en GitHub como un lenguaje de marcado ligero que convierte texto plano en HTML con formato visual. Al escribir archivos con extensión \texttt{.md}, GitHub utiliza un motor llamado \textbf{GitHub Flavored Markdown (GFM)}, el cual permite estructurar encabezados, listas, enlaces e imágenes de forma intuitiva. Es la herramienta estándar para documentar repositorios mediante archivos README.md, permitiendo que la información técnica sea legible y organizada sin necesidad de código complejo.
+
+\subsection{Escritura en LaTeX}
+
+LaTeX es un sistema de composición de textos orientado a la creación de documentos científicos y técnicos de alta calidad. A diferencia de los procesadores de texto convencionales, se basa en instrucciones lógicas que separan el contenido del formato. Esto permite una gestión impecable de fórmulas matemáticas complejas, referencias bibliográficas automáticas y una estructura jerárquica robusta, convirtiéndolo en la herramienta esencial para la redacción de informes de laboratorio y proyectos de ingeniería. Su estructura se basa en comandos que definen la jerarquía del documento.
+
+\section{Cheatsheets}
+
+Las guías de referencia rápida, o cheatsheets, actúan como herramientas de consulta inmediata que optimizan el flujo de trabajo técnico. Su función principal es sintetizar la sintaxis y los comandos esenciales de lenguajes como HTML o LaTeX en un formato compacto, eliminando la necesidad de memorizar cada detalle. Para el desarrollo de este módulo, estas guías permitieron resolver dudas puntuales de manera ágil, garantizando que el proceso de codificación y documentación fuera fluido y eficiente.
+
+\section{Google Colab}
+
+Google Colab es una plataforma gratuita en la nube que permite escribir y ejecutar código Python desde el navegador, sin necesidad de instalar nada en la computadora. Funciona mediante notebooks que combinan texto y código, utilizando la potencia de los servidores de Google (incluyendo GPUs para tareas pesadas). Es la herramienta estándar para ciencia de datos y aprendizaje automático, facilitando el trabajo colaborativo al guardarse directamente en Google Drive.
+
+\section{Conclusión}
+
+En conclusión, el desarrollo de este primer módulo ha permitido consolidar un flujo de trabajo integral basado en estándares técnicos modernos. La transición desde la estructuración web básica en HTML hasta la composición avanzada en LaTeX demuestra la importancia de elegir la herramienta adecuada según el nivel de formalidad y complejidad requerido. 
+
+Por otro lado, la adopción de Markdown y el uso de recursos de consulta rápida (\textit{cheatsheets}) han probado ser fundamentales para mejorar la productividad y la organización de la documentación. Finalmente, la introducción a Google Colab abre un abanico de posibilidades para el cálculo numérico y el análisis de datos en la nube. En conjunto, estas competencias no solo optimizan la calidad académica de los informes presentados, sino que sientan las bases tecnológicas necesarias para el ejercicio profesional de la ingeniería.
+
+\end{document}
